@@ -29,7 +29,25 @@ if(NOT SFML_FOUND)
 endif()
 
 add_executable(biocinoz
+    src/Animal.cpp
+    src/Animal.h
+    src/Entity.cpp
+    src/Entity.h
+    src/Herbivore.cpp
+    src/Herbivore.h
     src/main.cpp
+    src/Plant.cpp
+    src/Plant.h
+    src/Predator.cpp
+    src/Predator.h
+    src/Renderer.h
+    src/Renderer.cpp
+    src/RenderParticle.h
+    src/SpeciesConfig.h
+    src/Vec3.cpp
+    src/Vec3.h
+    src/World.cpp
+    src/World.h
 )
 
 target_link_libraries(biocinoz PRIVATE sfml-graphics sfml-window sfml-system)
